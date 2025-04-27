@@ -1,0 +1,23 @@
+<div class="user-home-page">
+  <nav class="navbar">
+      <div class="logo">EventManager</div>
+      <ul>
+        <li><a href="#!/user-home">Home</a></li>
+        <li><a href="#!/registered-events">Registered</a></li> <!-- corrected here -->
+        <li><a href="#!/log-out">Logout</a></li> <!-- added / after #! -->        
+      </ul>
+  </nav>
+
+  <div class="container">
+      <h2>Events</h2>
+      <div class="event-container">
+          <div class="event-card" ng-repeat="event in upcomingEvents">
+              <img ng-src="{{event.image}}" alt="Event Image">
+              <h3>{{event.name}}</h3>
+              <p>{{event.description}}</p>
+              <button ng-click="viewEvent(event)">View Details</button>
+              <button ng-click="registerEvent(event)">Register</button>
+          </div>
+      </div>
+  </div>
+</div>

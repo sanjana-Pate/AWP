@@ -1,0 +1,39 @@
+<div class="login-container" ng-controller="LoginController">
+    <div class="login-box">
+      <!-- <img src="images/logo.png" alt="Logo" class="login-logo" /> -->
+      <h1>Welcome to Event Management</h1>
+  
+      <div ng-if="!showUserLoginForm && !showAdminLoginForm">
+        <p>Please choose how you want to log in:</p>
+  
+        <button class="btn" ng-click="showAdminLogin()">Login as Admin</button>
+        <button class="btn" ng-click="showUserLogin()">Login as User</button>
+  
+        <p class="register-link">Don't have an account?
+          <a href="#!/register">Register Now</a>
+        </p>
+      </div>
+  
+      <!-- Admin Login Form -->
+      <div ng-if="showAdminLoginForm">
+        <h2>Admin Login</h2>
+        <input type="text" ng-model="admin.username" placeholder="Enter Admin Username" class="input-box" />
+        <input type="password" ng-model="admin.password" placeholder="Enter Admin Password" class="input-box" />
+        
+        <button class="btn" ng-click="loginAsAdmin()">Submit</button>
+        <button class="btn cancel-btn" ng-click="cancelLogin()">Cancel</button>
+      </div>
+  
+      <!-- User Login Form -->
+      <div ng-if="showUserLoginForm">
+        <h2>User Login</h2>
+        <input type="text" ng-model="user.username" placeholder="Enter User Username" class="input-box" />
+        <input type="password" ng-model="user.password" placeholder="Enter User Password" class="input-box" />
+        
+        <button class="btn" ng-click="loginAsUser()">Submit</button>
+        <button class="btn cancel-btn" ng-click="cancelLogin()">Cancel</button>
+      </div>
+  
+    </div>
+  </div>
+  

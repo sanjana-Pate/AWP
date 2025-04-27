@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+/* Navbar */
+.admin-home {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f7f9fc;
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    background-color: #004080;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar ul li a, .navbar ul li {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .content {
+    padding: 30px;
+  }
+  .event-container{
+    display: flex;
+    gap: 30px;
+}
+  
+  .event-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    gap: 10px;
+    background: rgb(223, 236, 237);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 3px 20px 6px rgba(51, 36, 36, 0.1);
+  }
+  .add-event-page {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f7f9fc;
+    min-height: 100vh;
+  }
+  .container{
+    margin-left: 40px;
+  }
+  .form-container {
+    background: white;
+    padding: 30px;
+    width: 400px;
+    margin: 30px auto;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004080;
+  }
+  
+  .form-container form input, .form-container form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .form-container form button {
+    width: 100%;
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .event-card img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  .event-card .details h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .event-card .details p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .event-card button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+
+
+
+.logo {
+    height: 40px;
+    margin-right: auto;
+}
+
+.content {
+    padding: 20px;
+}
+
+.login-page, .register-page {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.login-page button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+    height: 100vh;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 3rem;
+  }
+  
+  .login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+  }
+  
+  .login-box h1 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  .login-box p {
+    color: #555;
+  }
+  
+  .login-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #388e3c;
+  }
+  
+  .register-link {
+    margin-top: 15px;
+  }
+
+  input{
+    width: 21rem;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    border: 2px,solid,lightblue;
+  }
+  /* Registration Form Styles */
+.register-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  }
+  
+  .register-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .register-box h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #333;
+  }
+  
+  .input-box {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .input-box:focus {
+    border-color: #74ebd5;
+  }
+  
+  .btn {
+    background: #54d2bb;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #4AC29A;
+  }
+  
+  .cancel-btn {
+    background: #ff6b6b;
+  }
+  
+  .cancel-btn:hover {
+    background: #ff4757;
+  }
+  
+  .register-box p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .register-box a {
+    color: #4AC29A;
+    text-decoration: none;
+  }
+  
+  .register-box a:hover {
+    text-decoration: underline;
+  }
+  

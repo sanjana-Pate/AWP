@@ -1,0 +1,15 @@
+<div class="register-container" ng-controller="RegisterController">
+    <div class="register-box">
+      <h1>User Registration</h1>
+  
+      <input type="text" ng-model="newUser.name" placeholder="Full Name" class="input-box" />
+      <input type="text" ng-model="newUser.username" placeholder="Username" class="input-box" />
+      <input type="password" ng-model="newUser.password" placeholder="Password" class="input-box" />
+      
+      <button class="btn" ng-click="registerUser()">Register</button>
+      <button class="btn cancel-btn" ng-click="cancelRegister()">Cancel</button>
+  
+      <p>Already have an account? <a href="#/">Login here</a></p>
+    </div>
+  </div>
+  

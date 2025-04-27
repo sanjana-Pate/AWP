@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "name": "Tech Meetup",
+      "date": "2025-05-10",
+      "details": "A meetup for tech enthusiasts.",
+      "participants": []
+    },
+    {
+      "id": 2,
+      "name": "Music Festival",
+      "date": "2025-06-15",
+      "details": "Enjoy the latest music performances!",
+      "participants": []
+    }
+  ]
+  

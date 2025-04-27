@@ -1,0 +1,25 @@
+<div class="admin-home-page">
+    <nav class="navbar">
+      <div class="logo">EventManager</div>
+      <ul>
+        <li><a href="#!/admin-home">Home</a></li>
+        <li><a href="#!/add-event">Add Event</a></li>
+        <li><a href="#!/past-events">Past Events</a></li>
+        <li><a href="#!log-out/">Logout</a></li>
+      </ul>
+    </nav>
+  
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <div class="event-container">
+        <div class="event-card" ng-repeat="event in upcomingEvents">
+            <img ng-src="{{event.image}}" alt="Event Image">
+            <h3>{{event.name}}</h3>
+            <p>{{event.description}}</p>
+            <button ng-click="viewEvent(event)">View Details</button>
+            <button ng-click="deleteEvent($index)">Delete Event</button>
+            <button ng-click="closeEvent($index)">Close Event</button>
+        </div>
+      </div>
+    </div>
+</div>

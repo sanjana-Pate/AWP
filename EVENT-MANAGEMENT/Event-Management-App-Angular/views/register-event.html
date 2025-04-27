@@ -1,0 +1,40 @@
+<div class="register-form-page">
+    <nav class="navbar">
+        <div class="logo">EventManager</div>
+        <ul>
+            <li><a href="#!/user-home">Home</a></li>
+            <li><a href="#!/registered-events">Registered Events</a></li> <!-- corrected -->
+            <li><a href="#!/log-out">Logout</a></li> <!-- corrected -->
+            
+        </ul>
+    </nav>
+
+    <div class="form-container">
+        <h2>Register for: {{selectedEvent.name}}</h2>
+        <form ng-submit="submitRegistration()">
+            <input type="text" ng-model="registration.name" placeholder="Your Name" required>
+            <input type="email" ng-model="registration.email" placeholder="Your Email" required>
+            <input type="text" ng-model="registration.phone" placeholder="Phone Number" required>
+            <textarea ng-model="registration.message" placeholder="Any Message (optional)"></textarea>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+</div>
+
+<style>
+
+
+.submit-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+</style>

@@ -1,0 +1,22 @@
+<div class="registered-events-page" style="font-family: Arial, sans-serif; background: #f9f9f9; min-height: 100vh; padding-bottom: 50px;">
+    <nav class="navbar" style="background-color: #007BFF; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+        <div class="logo" style="color: white; font-size: 24px; font-weight: bold;">EventManager</div>
+        <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+            <li><a href="#!/user-home" style="color: white; text-decoration: none; font-weight: bold;">Home</a></li>
+            <li><a href="#!/registered-events" style="color: white; text-decoration: none; font-weight: bold;">Registered Events</a></li> <!-- corrected -->
+            <li><a href="#!/log-out" style="color: white; text-decoration: none; font-weight: bold;">Logout</a></li> <!-- corrected -->            
+        </ul>
+    </nav>
+
+    <div class="container" style="width: 90%; max-width: 900px; margin: 40px auto;">
+        <h2 style="text-align: center; margin-bottom: 30px; color: #333;">Registered Events</h2>
+        
+        <div class="registered-event" ng-repeat="registration in registrations" 
+             style="background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0; color: #007BFF;">{{registration.event.name}}</h3>
+            <p><b>Registered By:</b> {{registration.user.name}}</p>
+            <p><b>Email:</b> {{registration.user.email}}</p>
+            <p><b>Phone:</b> {{registration.user.phone}}</p>
+        </div>
+    </div>
+</div>

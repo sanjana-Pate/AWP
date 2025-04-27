@@ -1,0 +1,97 @@
+<div class="event-detail-page">
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f9;
+      }
+  
+      .navbar {
+        background-color: #4CAF50;
+        padding: 15px 30px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+  
+      .navbar .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+  
+      .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+  
+      .navbar ul li {
+        margin-left: 20px;
+      }
+  
+      .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: color 0.3s;
+      }
+  
+      .navbar ul li a:hover {
+        color: #ddd;
+      }
+  
+      .event-detail-container {
+        max-width: 600px;
+        margin: 40px auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 12px;
+        padding-left: 200px;
+        box-shadow: 30 2px 10px rgba(0, 0, 0, 0.1);
+      }
+  
+      .event-detail-container h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+  
+      .event-detail-container img {
+        width: 50%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+  
+      .event-detail-container p {
+        font-size: 18px;
+        color: #555;
+        margin: 10px 0;
+      }
+  
+      .event-detail-container b {
+        color: #000;
+      }
+    </style>
+  
+    <nav class="navbar">
+      <div class="logo">EventManager</div>
+      <ul>
+        <li><a ng-click="backToHome()">Back to Home</a></li>
+      </ul>
+    </nav>
+  
+    <div class="event-detail-container">
+      <h2>{{event.name}}</h2>
+      <img class ="img" ng-src="{{event.image}}" alt="Event Image">
+      <p><b>Date:</b> {{event.date}}</p>
+      <p><b>Location:</b> {{event.location}}</p>
+      <p><b>Description:</b></p>
+      <p>{{event.description}}</p>
+    </div>
+  </div>
+  
